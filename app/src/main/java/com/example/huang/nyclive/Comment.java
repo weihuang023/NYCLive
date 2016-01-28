@@ -18,6 +18,7 @@ public class Comment extends AppCompatActivity {
         back.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(Comment.this, MainActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
             }
         });
