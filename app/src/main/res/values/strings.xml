@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NYC Live</string>
+    <string name="nyc_live_camera">NYC Live Camera</string>
+    <string name="setting">Setting</string>
+    <string name="feed_back">Comment</string>
+    <string name="camera">Camera</string>
+    <string name="back">Back</string>
+</resources>
