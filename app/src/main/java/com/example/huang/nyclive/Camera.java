@@ -15,7 +15,7 @@ public class Camera extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camera);
 
-        Button back = (Button) findViewById(R.id.button);
+        Button back = (Button) findViewById(R.id.back_button);
 
         back.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
@@ -24,7 +24,7 @@ public class Camera extends AppCompatActivity {
             }
         });
 
-        Button setting = (Button) findViewById(R.id.button1);
+        Button setting = (Button) findViewById(R.id.settings_button);
 
         setting.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
