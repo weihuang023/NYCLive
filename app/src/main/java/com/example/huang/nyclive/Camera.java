@@ -57,7 +57,7 @@ public class Camera extends AppCompatActivity {
         Button back = (Button) findViewById(R.id.back_button);
         back.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(Camera.this, CameraListView.class);
+                Intent intent = new Intent(Camera.this, MainActivity.class);
                 startActivity(intent);
             }
         });

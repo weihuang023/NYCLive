@@ -2,7 +2,7 @@
     <string name="app_name">NYC Live</string>
     <string name="nyc_live_camera">NYC Live Camera</string>
     <string name="camera">Camera</string>
-    <string name="camera_list">List of Cameras</string>
+    <string name="camera_list">List All Cameras</string>
     <string name="back">Back</string>
     <string name="settings_label">Settings</string>
     <string name="settings_title">Camera Setting</string>
@@ -24,4 +24,8 @@
         It is an idea Design for people
         to avoid traffic jam in rush hours.
         </string>
+    <string name="manhattan">Manhattan</string>
+    <string name="queens">Queens</string>
+    <string name="bronx">Bronx</string>
+    <string name="brooklyn">Brooklyn</string>
 </resources>

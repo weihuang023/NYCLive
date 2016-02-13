@@ -25,33 +25,29 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Manhattan"
-        android:id="@+id/button2"
-        android:layout_gravity="center_horizontal"
+        android:text="@string/manhattan"
+        android:id="@+id/manhattanButton"
         tools:ignore="HardcodedText" />
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Queens"
-        android:id="@+id/button3"
-        android:layout_gravity="center_horizontal"
+        android:text="@string/queens"
+        android:id="@+id/queensButton"
         tools:ignore="HardcodedText" />
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Bronx"
-        android:id="@+id/button4"
-        android:layout_gravity="center_horizontal"
+        android:text="@string/bronx"
+        android:id="@+id/bronxButton"
         tools:ignore="HardcodedText" />
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Brooklyn"
-        android:id="@+id/button5"
-        android:layout_gravity="center_horizontal"
+        android:text="@string/brooklyn"
+        android:id="@+id/brooklynButton"
         tools:ignore="HardcodedText" />
 
     <Button
@@ -59,7 +55,6 @@
         android:layout_height="wrap_content"
         android:text="About"
         android:id="@+id/button"
-        android:layout_gravity="center_horizontal"
         tools:ignore="HardcodedText" />
 
 </LinearLayout>
