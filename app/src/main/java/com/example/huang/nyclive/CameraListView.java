@@ -17,7 +17,7 @@ public class CameraListView extends Activity {
     ArrayAdapter<String> adapter;
 
     public int itemPosition;
-    public String[] link = new String[] {
+    public String[] link = new String[]{
             "http://207.251.86.238/cctv254.jpg",
             "http://207.251.86.238/cctv254.jpg",
             "http://207.251.86.238/cctv252.jpg",
