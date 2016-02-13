@@ -33,7 +33,6 @@ public class Comment extends Activity {
                 body.setText("");
             }
         });
-
     }
     protected void sendEmail() {
         Log.i("Send email", "");
@@ -58,5 +57,4 @@ public class Comment extends Activity {
                     Toast.LENGTH_LONG).show();
         }
     }
-
 }
