@@ -34,7 +34,10 @@
         <activity android:name=".CameraListView"
             android:label="@string/camera_list"
             android:theme="@android:style/Theme.Black">
-
+        </activity>
+        <activity android:name=".About"
+            android:label="@string/about_title"
+            android:theme="@android:style/Theme.Dialog">
         </activity>
     </application>
 

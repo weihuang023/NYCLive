@@ -16,4 +16,12 @@
     <string name="hints_summary">Show hints during play</string>
     <string name="video_title">Video</string>
     <string name="video_summary">Start Playing</string>
+    <string name="about_title">About NYC Live Camera</string>
+    <string name="about_text">\
+        NYC Live Camera is real-time traffic camera.
+        It shows the views of traffic status in major
+        area from NYC Dot Database.
+        It is an idea Design for people
+        to avoid traffic jam in rush hours.
+        </string>
 </resources>
