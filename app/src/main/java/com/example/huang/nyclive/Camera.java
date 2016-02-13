@@ -9,8 +9,6 @@ import android.widget.Button;
 
 public class Camera extends AppCompatActivity {
 
-    // TODO: 1/28/16 Back to Main Activity 
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camera);
