@@ -12,14 +12,19 @@ import android.view.View.OnClickListener;
 
 public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_main);
         Button camera = (Button) findViewById(R.id.camera_button);
         camera.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,CameraListView.class);
+                Intent intent = new Intent(MainActivity.this, CameraListView.class);
+                startActivity(intent);
+            }
+        });
+        Button aboutButton = (Button) findViewById(R.id.button);
+        aboutButton.setOnClickListener(new OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,About.class);
                 startActivity(intent);
             }
         });
