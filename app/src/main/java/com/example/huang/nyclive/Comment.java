@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 public class Comment extends Activity {
 
+    protected static final String TAG = "NYCLive";
     private EditText subject;
     private EditText body;
 
@@ -35,8 +36,8 @@ public class Comment extends Activity {
         });
     }
     protected void sendEmail() {
-        Log.i("Send email", "");
 
+        Log.d(TAG, "Send email");
         String[] recipients = {"weih81888@gmail.com"};
         Intent email = new Intent(Intent.ACTION_SEND, Uri.parse("mailto:"));
         // prompts email clients only
@@ -50,10 +51,11 @@ public class Comment extends Activity {
             // the user can choose the email client
             startActivity(Intent.createChooser(email, "Choose an email client from..."));
             finish();
-            Log.i("Finished sending email", "");
+            Log.d(TAG, "Finished sending email...");
 
         } catch (android.content.ActivityNotFoundException ex) {
-            Toast.makeText(Comment.this, "No email client installed.",
+            Toast.makeText(Comment.this,
+                    "No email client installed.",
                     Toast.LENGTH_LONG).show();
         }
     }

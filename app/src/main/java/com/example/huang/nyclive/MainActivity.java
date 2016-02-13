@@ -16,10 +16,10 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
-        Button camera = (Button) findViewById(R.id.button);
+        Button camera = (Button) findViewById(R.id.camera_button);
         camera.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,Camera.class);
+                Intent intent = new Intent(MainActivity.this,CameraListView.class);
                 startActivity(intent);
             }
         });

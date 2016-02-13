@@ -19,7 +19,7 @@
         </activity>
         <activity
             android:name=".Camera"
-            android:label="@string/camera">
+            android:label="@string/camera" >
         </activity>
         <activity
             android:name=".Comment"
@@ -30,6 +30,11 @@
             android:name=".Setting"
             android:label="@string/settings_label"
             android:theme="@style/Theme.AppCompat.CompactMenu">
+        </activity>
+        <activity android:name=".CameraListView"
+            android:label="@string/camera_list"
+            android:theme="@android:style/Theme.Black">
+
         </activity>
     </application>
 

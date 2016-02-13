@@ -12,13 +12,14 @@
         android:text="@string/nyc_live_camera"
         android:textSize="50sp"
         android:textAlignment="center"
+        android:textAllCaps="true"
         android:id="@+id/textView" />
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/camera"
-        android:id="@+id/button" />
+        android:text="@string/camera_list"
+        android:id="@+id/camera_button" />
 
 
 

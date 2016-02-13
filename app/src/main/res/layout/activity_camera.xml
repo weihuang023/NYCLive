@@ -2,32 +2,32 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:weightSum="1">
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/nyc_live_camera"
+        android:textAllCaps="true"
         android:textAlignment="center"
         android:id="@+id/textView" />
 
     <WebView
         android:layout_width="fill_parent"
-        android:layout_height="0dp"
+        android:layout_height="250dp"
         android:id="@+id/webView"
-        android:layout_weight="1" />
+        android:layout_margin="@dimen/activity_horizontal_margin"/>
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/back"
         android:id="@+id/back_button" />
-
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/settings_title"
         android:id="@+id/settings_button" />
+
 
 </LinearLayout>
