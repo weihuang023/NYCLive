@@ -4,10 +4,10 @@
     <string name="camera">Camera</string>
     <string name="back">Back</string>
     <string name="settings_label">Settings</string>
-    <string name="settings_title">Cam Setting</string>
+    <string name="settings_title">Camera Setting</string>
     <string name="settings_shortcut">s</string>
-    <string name="comments_label">Feedback</string>
-    <string name="comments_title">Comment</string>
+    <string name="comments_label">Comments</string>
+    <string name="comments_title">Feedback</string>
     <string name="comments_shortcut">c</string>
     <string name="music_title">Music</string>
     <string name="music_summary">Play background music</string>
@@ -15,7 +15,4 @@
     <string name="hints_summary">Show hints during play</string>
     <string name="video_title">Video</string>
     <string name="video_summary">Start Playing</string>
-    <string name="send">Send</string>
-    <string name="feed_back">This is an EditText Filed.</string>
-    <string name="subject_label">Subject</string>
 </resources>

@@ -12,11 +12,6 @@ import android.view.View.OnClickListener;
 
 public class MainActivity extends Activity {
 
-    // TODO: 1/28/16 1 TextView 2 Buttons
-    // TODO: 1/28/16 Text NYC Live Camera
-    // TODO: 1/28/16 Add libraries for widget.Button, Intent, View, OnClickListener
-    // TODO: 1/28/16 Create activities for camera, comment
-
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);

@@ -1,48 +1,62 @@
 package com.example.huang.nyclive;
 
-import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
+import android.content.Intent;
 import android.util.Log;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
-public class Comment extends AppCompatActivity {
+public class Comment extends Activity {
 
+    private EditText subject;
+    private EditText body;
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_comment);
 
-        Button back = (Button) findViewById(R.id.back_button);
 
-        back.setOnClickListener(new OnClickListener() {
-            public void onClick(View v) {
-                Intent intent = new Intent(Comment.this, MainActivity.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
+        subject = (EditText) findViewById(R.id.subject);
+        body = (EditText) findViewById(R.id.body);
+
+        Button sendBtn = (Button) findViewById(R.id.sendEmail);
+        sendBtn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                sendEmail();
+                // after sending the email, clear the fields
+                subject.setText("");
+                body.setText("");
             }
         });
-        }
 
-    public void sendFeedback(View v) {
-        Intent emailIntent = new Intent(Intent.ACTION_SEND);
-        emailIntent.setData(Uri.parse("mailto:"));
-        emailIntent.setType("text/plain");
-        emailIntent.putExtra(Intent.EXTRA_EMAIL, "weihuang023@yahoo.com");
-        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Feedback of LiveCam");
-        emailIntent.putExtra(Intent.EXTRA_TEXT, "What do you think?");
+    }
+    protected void sendEmail() {
+        Log.i("Send email", "");
+
+        String[] recipients = {"weih81888@gmail.com"};
+        Intent email = new Intent(Intent.ACTION_SEND, Uri.parse("mailto:"));
+        // prompts email clients only
+        email.setType("message/rfc822");
+
+        email.putExtra(Intent.EXTRA_EMAIL, recipients);
+        email.putExtra(Intent.EXTRA_SUBJECT, subject.getText().toString());
+        email.putExtra(Intent.EXTRA_TEXT, body.getText().toString());
+
         try {
-            startActivity(Intent.createChooser(emailIntent, "Send mail..."));
+            // the user can choose the email client
+            startActivity(Intent.createChooser(email, "Choose an email client from..."));
             finish();
-            Log.d("Finished sending email", "");
+            Log.i("Finished sending email", "");
+
         } catch (android.content.ActivityNotFoundException ex) {
-            Toast.makeText(
-                    Comment.this,
-                    "There is no email client installed.",
-                    Toast.LENGTH_SHORT).show();
+            Toast.makeText(Comment.this, "No email client installed.",
+                    Toast.LENGTH_LONG).show();
         }
     }
+
 }

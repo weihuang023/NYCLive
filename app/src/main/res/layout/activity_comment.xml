@@ -1,59 +1,41 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:weightSum="1">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/comments_label"
-        android:id="@+id/textView"
-        android:textAlignment="center"
-        android:textSize="40sp"/>
-    <LinearLayout
+        android:id="@+id/text1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/subject_label"
-            android:id="@+id/subject_text_view"
-            android:textSize="20sp"/>
-        <EditText
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/subject_editText"
-            android:labelFor="@+id/subject_editText"
-            android:inputType="text" />
-    </LinearLayout>
-        <EditText
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/comments_editText"
-            android:labelFor="@+id/comments_editText"
-            android:text="@string/comments_title"
-            android:inputType="text" />
-    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Complete the Fields to Send a Feedback"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Subject"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Message body"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/sendEmail"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/send"
-            android:id="@+id/send_button"
-            android:onClick="sendFeedback"
-            android:layout_weight="1"
-            tools:ignore="ButtonStyle" />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/back"
-            android:id="@+id/back_button"
-            android:layout_weight="1"
-            tools:ignore="ButtonStyle" />
-      </LinearLayout>
+        android:layout_marginTop="30dp"
+        android:text="Compose an email"
+        tools:ignore="HardcodedText" />
+
 </LinearLayout>
