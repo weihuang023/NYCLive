@@ -21,12 +21,6 @@
         android:text="@string/camera_list"
         android:id="@+id/camera_button" />
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/abc"
-        android:id="@+id/imageView2"
-        tools:ignore="ContentDescription" />
 
 
 </LinearLayout>
