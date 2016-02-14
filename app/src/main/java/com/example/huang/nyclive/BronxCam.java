@@ -28,10 +28,12 @@ public class BronxCam extends Activity {
             "http://207.251.86.238/cctv232.jpg",
             "http://207.251.86.238/cctv48.jpg",
             "http://207.251.86.238/cctv218.jpg",
-            "http://207.251.86.238/cctv192.jpg", "http://207.251.86.238/cctv59.jpg",
-            "http://207.251.86.238/cctv190.jpg","http://207.251.86.238/cctv50.jpg",
+            "http://207.251.86.238/cctv192.jpg",
+            "http://207.251.86.238/cctv59.jpg",
+            "http://207.251.86.238/cctv190.jpg",
+            "http://207.251.86.238/cctv50.jpg",
             "http://207.251.86.238/cctv189.jpg",
-           "http://207.251.86.238/cctv197.jpg",
+            "http://207.251.86.238/cctv197.jpg",
             "http://webcam.mta.info/btimg/172.28.203.8/2/image.jpg",
             "http://webcam.mta.info/btimg/172.28.203.8/1/image.jpg",
             "http://207.251.86.238/cctv121.jpg",
@@ -69,12 +71,15 @@ public class BronxCam extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camera_list);
+
         listView = (ListView) findViewById(R.id.list);
 
         adapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_list_item_1,
                 android.R.id.text1, values);
+
         listView.setAdapter(adapter);
+
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView listView, View view, int position, long id) {
                 itemPosition = position;
